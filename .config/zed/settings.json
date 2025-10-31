@@ -1,0 +1,57 @@
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  // Core
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+
+  // Editor
+  "helix_mode": false,
+
+  // UI
+  "ui_font_size": 14,
+  "buffer_font_size": 14,
+  "buffer_line_height": { "custom": 1.4 },
+  "buffer_font_features": { "calt": true },
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Zed Legacy: Atelier Cave Dark"
+  },
+  "title_bar": {
+    "show_sign_in": false
+  },
+  "toolbar": { "breadcrumbs": false, "quick_actions": false },
+  "tabs": { "file_icons": true },
+  "soft_wrap": "editor_width",
+  "icon_theme": "Catppuccin Mocha",
+  "git": { "inline_blame": { "enabled": false } },
+
+  // AI
+  "features": {
+    "edit_prediction_provider": "copilot"
+  },
+  "edit_predictions": {
+    "mode": "subtle"
+  },
+  "agent": {
+    "default_profile": "write",
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-sonnet-4.5"
+    }
+  },
+
+  // Language-specific
+  "languages": {
+    "CSS": {
+      "language_servers": ["tailwindcss-language-server"]
+    }
+  }
+}
