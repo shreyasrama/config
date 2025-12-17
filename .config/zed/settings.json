@@ -5,10 +5,33 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  // SSH
+  "ssh_connections": [
+    {
+      "host": "see-trx4002.canterbury.ac.nz",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/home/UOCNT/sra321"],
+        },
+      ],
+    },
+    {
+      "host": "debian",
+      "username": "shrey",
+      "args": [],
+      "projects": [
+        {
+          "paths": ["/home/shrey/Development/llm/./"],
+        },
+      ],
+    },
+  ],
+
   // Core
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
 
   // Editor
@@ -22,36 +45,38 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Zed Legacy: Atelier Cave Dark"
+    "dark": "One Dark",
   },
   "title_bar": {
-    "show_sign_in": false
+    "show_sign_in": false,
   },
   "toolbar": { "breadcrumbs": false, "quick_actions": false },
   "tabs": { "file_icons": true },
   "soft_wrap": "editor_width",
   "icon_theme": "Catppuccin Mocha",
   "git": { "inline_blame": { "enabled": false } },
+  "colorize_brackets": true,
 
   // AI
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "copilot",
   },
   "edit_predictions": {
-    "mode": "subtle"
+    "mode": "subtle",
   },
   "agent": {
+    "always_allow_tool_actions": true,
     "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-sonnet-4.5"
-    }
+      "model": "claude-opus-4.5",
+    },
   },
 
   // Language-specific
   "languages": {
     "CSS": {
-      "language_servers": ["tailwindcss-language-server"]
-    }
-  }
+      "language_servers": ["tailwindcss-language-server"],
+    },
+  },
 }
