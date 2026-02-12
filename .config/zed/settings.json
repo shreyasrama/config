@@ -58,18 +58,30 @@
   "colorize_brackets": true,
 
   // AI
-  "features": {
-    "edit_prediction_provider": "copilot",
-  },
   "edit_predictions": {
+    "provider": "copilot",
     "mode": "subtle",
   },
   "agent": {
+    "favorite_models": [
+      {
+        "provider": "copilot_chat",
+        "model": "gpt-5.2-codex"
+      },
+      {
+        "provider": "copilot_chat",
+        "model": "claude-sonnet-4.5"
+      },
+      {
+        "provider": "copilot_chat",
+        "model": "gpt-5.3-codex"
+      }
+    ],
     "always_allow_tool_actions": true,
     "default_profile": "write",
     "default_model": {
       "provider": "copilot_chat",
-      "model": "claude-opus-4.5",
+      "model": "gpt-5.3-codex",
     },
   },
 
